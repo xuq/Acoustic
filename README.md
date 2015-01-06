@@ -7,6 +7,7 @@ By xuq
 Email: xuq007@gmail.com
 
 Already implemented:
+
 (1) Can identify 7-byte UID with latency < 5 sec 
 
 (2) Detection range < 10cm (even longer also works, can be controlled by speaker volume bar)

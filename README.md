@@ -19,7 +19,7 @@ Decode: REceiver.java
 <br/>
 By xuq
 <br/>
-Email: xuq007@gmail.com
+Email: xuq22@mcmaster.ca
 <br>
 
 <h2>Already implemented</h2>

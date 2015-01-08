@@ -99,6 +99,7 @@ public class GeneratorActivity extends Activity {
 			View rootView = inflater.inflate(R.layout.fragment_generator,
 					container, false);
 			
+			//The main logic for volume seekbar, this seekbar is used to control the transmitting power
 			audioManager = (AudioManager)getActivity().getSystemService(Context.AUDIO_SERVICE);;
 			
 		    int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
@@ -120,6 +121,7 @@ public class GeneratorActivity extends Activity {
 		            audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, arg1, 0);
 		        }
 		    });
+
 			return rootView;
 		}
 	}

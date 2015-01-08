@@ -152,6 +152,7 @@ public class Receiver extends AsyncTask<Integer, Double, Long> {
 							}
 							for (int i = 0; i < result.length; i++)
 								result[i] = 0;
+
 							ByteBuffer bb = ByteBuffer.wrap(resultForLong, 0, 8);
 							resultNumber = bb.getLong();
 							
@@ -159,17 +160,21 @@ public class Receiver extends AsyncTask<Integer, Double, Long> {
 							storedCheckValue = storedCheckBytes.getLong();
 							
 							byte[] arrayRecieve = Arrays.copyOfRange(ByteBuffer.allocate(8).putLong(resultNumber).array(), 3, 8);
+							
 							//Calculate the crc32 checksum
 							Checksum checksum = new CRC32();
-							// update the current checksum with the specified array of bytes
+							//update the current checksum with the specified array of bytes
 							checksum.update(arrayRecieve, 0, 5);
 							// get the current checksum value
 							long checkValue = checksum.getValue();
+
+							//If CRC matches then stop recording and return received value
 							if (storedCheckValue == checkValue)
-								{
+							{
 								audioRecord.stop();
 								return resultNumber;
-								}
+							}
+							//Otherthan continue receiving...
 							else
 								continue;
 							
@@ -183,7 +188,6 @@ public class Receiver extends AsyncTask<Integer, Double, Long> {
 					//return (long)1;
 					continue;
 				}
-//			}
 		}
 		audioRecord.stop();
 		return null;

@@ -36,7 +36,7 @@ Email: xuq22@mcmaster.ca
 
 <li> CRC32 is included.</li>
 <ul>
-
+<br/>
 <h2>TODO</h2>
 <ul>
 <li>Improve efficiency</li>

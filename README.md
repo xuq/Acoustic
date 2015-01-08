@@ -35,7 +35,7 @@ Email: xuq22@mcmaster.ca
 <li> A listening background task</li>
 
 <li> CRC32 is included.</li>
-<ul>
+</ul>
 <br/>
 <h2>TODO</h2>
 <ul>

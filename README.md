@@ -3,7 +3,7 @@ Acoustic Communication
 This is the demo for Acoustic communication (as a potential alternative of NFC)
 
 
-Basic princinple:
+<h>Basic princinple:</h>
 The current implementation is based on Frequency Shift Keying, every 2-bit is mapped to one frequency 
 among 4 freq total and the corresponding waveform of 441 bits long. A marker byte 10 is used for indicating
 the start of the UID. A CRC byte is attached at the end of the byte sequence for error correction. 

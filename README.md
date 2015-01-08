@@ -14,7 +14,7 @@ Sampling frequency if 44KHz The decoder used FFT.
 </p>
 Encode： Generator.java
 <br/>
-Decode: REceiver.java
+Decode: Receiver.java
 </p>
 <br/>
 By xuq

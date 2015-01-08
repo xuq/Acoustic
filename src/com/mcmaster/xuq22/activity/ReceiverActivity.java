@@ -1,5 +1,6 @@
 package com.mcmaster.xuq22.activity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -22,6 +23,7 @@ import com.mcmaster.xuq22.R;
 import com.mcmaster.xuq22.process.Common;
 import com.mcmaster.xuq22.process.Receiver;
 
+@SuppressLint("NewApi")
 public class ReceiverActivity extends Activity {
 	private static TableLayout spectrumTable;
 	private static TextView[] energyTexts = new TextView[Common.FREQUENCY_TO_WATCH];
@@ -59,7 +61,7 @@ public class ReceiverActivity extends Activity {
 	}
 
 	public void finished(long result) {
-		//v.vibrate(500);
+		v.vibrate(300);
 		new AlertDialog.Builder(this)
 				.setTitle("Result")
 				.setMessage(String.valueOf(result))

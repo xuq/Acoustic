@@ -92,7 +92,7 @@ public class Generator extends AsyncTask<Integer, Void, Void> {
 			}
 			//Log.i("send", "sent");
 			  try {
-				TimeUnit.MILLISECONDS.sleep(5);
+				TimeUnit.MILLISECONDS.sleep(1);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

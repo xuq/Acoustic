@@ -165,19 +165,23 @@ public class Receiver extends AsyncTask<Integer, Double, Long> {
 							checksum.update(arrayRecieve, 0, 5);
 							// get the current checksum value
 							long checkValue = checksum.getValue();
-							
-							audioRecord.stop();
 							if (storedCheckValue == checkValue)
+								{
+								audioRecord.stop();
 								return resultNumber;
+								}
 							else
-								return 0l;
+								continue;
+							
+							
 						}
 					}
 					
 				}
 				else {
-					audioRecord.stop();
-					 return (long)1;
+					//audioRecord.stop();
+					//return (long)1;
+					continue;
 				}
 //			}
 		}

@@ -16,7 +16,7 @@ Encode： Generator.java
 <br/>
 Decode: REceiver.java
 </p>
-
+<br/>
 By xuq
 <br/>
 Email: xuq007@gmail.com

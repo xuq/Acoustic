@@ -26,6 +26,12 @@ Email: xuq22@mcmaster.ca
 <ul>
 <li> Can identify 7-byte UID with latency < 5 sec </li>
 
+<h2>TODO</h2>
+<ul>
+<li>Improve efficiency</li>
+<li>Synchronization</li>
+</ul>
+
 <li> Detection range < 10cm (even longer also works, can be controlled by speaker volume bar)</li>
 
 <li> a degree of tolerance to background noise (human conversation, music, …)</li>

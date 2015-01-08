@@ -23,14 +23,16 @@ Email: xuq22@mcmaster.ca
 <br>
 
 <h2>Already implemented</h2>
-(1) Can identify 7-byte UID with latency < 5 sec 
+<ul>
+<li> Can identify 7-byte UID with latency < 5 sec </li>
 
-(2) Detection range < 10cm (even longer also works, can be controlled by speaker volume bar)
+<li> Detection range < 10cm (even longer also works, can be controlled by speaker volume bar)</li>
 
-(3) a degree of tolerance to background noise (human conversation, music, …)
+<li> a degree of tolerance to background noise (human conversation, music, …)</li>
 
-(4) robustness to phone orientation
+<li> robustness to phone orientation</li>
 
-(5) A listening background task
+<li> A listening background task</li>
 
-(6) CRC32 is included.
+<li> CRC32 is included.</li>
+<ul>

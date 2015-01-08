@@ -9,11 +9,11 @@ among 4 freq total and the corresponding waveform of 441 bits long. A marker byt
 the start of the UID. A CRC byte is attached at the end of the byte sequence for error correction. 
 Sampling frequency if 44KHz The decoder used FFT.
 </p>
-<br/>
 <p>As an example, 7-byte UID takes roughly (7+2)*8/2*441/44Khz = 360ms to transmit. </p>
 
 </p>
 Encode： Generator.java
+<br/>
 Decode: REceiver.java
 </p>
 
